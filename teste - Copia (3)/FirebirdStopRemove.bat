@@ -1,0 +1,27 @@
+cd /
+net stop firebirdguardiandefaultinstance
+net stop firebirdSERVERdefaultinstance
+net stop firebirdservernetspeedinstance
+net stop firebirdguardiannetspeedinstance
+net stop interbaseserver
+net stop interbaseguardian
+net stop firebirdservertgctron
+net stop firebirdGuardianFirebird_2_5
+net stop FirebirdServerFirebird_2_5
+net stop FirebirdGuardianSuperCash
+net stop FirebirdServerSuperCash
+net stop FirebirdGuardianSN
+sc delete firebirdguardiandefaultinstance
+sc delete firebirdSERVERdefaultinstance
+sc delete firebirdservernetspeedinstance
+sc delete firebirdguardiannetspeedinstance
+sc delete interbaseserver
+sc delete interbaseguardian
+sc delete firebirdservertgctron
+sc delete firebirdGuardianFirebird_2_5
+sc delete FirebirdServerFirebird_2_5
+sc delete FirebirdGuardianSuperCash
+sc delete FirebirdServerSuperCash
+sc delete FirebirdGuardianSN
+rd %programdata%\netspeed\firebird /s /q
+pause
